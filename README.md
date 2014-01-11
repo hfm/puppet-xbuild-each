@@ -1,3 +1,4 @@
+## module structure
 
 ```
 modules/xbuild/
@@ -14,4 +15,11 @@ modules/xbuild/
     |   `-- install.pp
     `-- ruby
         `-- install.pp
+```
+
+## how to use
+
+```puppet
+include ::xbuild
+::xbuild::ruby::install { '2.1.0': }
 ```
